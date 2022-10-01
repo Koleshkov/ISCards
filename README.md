@@ -1,4 +1,4 @@
-# [![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&size=25&pause=1000&color=3874CB&width=435&lines=%D0%9E%D0%B3%D0%BB%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5)](https://git.io/typing-svg)
+# ISCards для Android [Скачать](https://disk.yandex.ru/d/qvMsi9p3Yltg_w).
 
 
 
@@ -42,7 +42,7 @@
 Так как у android нет нативных инструментов поддержки на подобии ms office, для разработки были использованы платные библиотеки для работы с excel с некоторыми ограничениями. Одно из них - библиотека сама создает лишний лист с рекламой данной библиотеки. Для просмотра карты следует переходить в лист "Данные".
 
 # ![image](https://user-images.githubusercontent.com/38366166/193397125-faa3fa22-04fb-47d8-b15f-f57e9ac26295.png)
-# [![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&size=25&pause=1000&color=3874CB&width=435&lines=%D0%A8%D0%B0%D0%B1%D0%BB%D0%BE%D0%BD%D1%8B+%D1%84%D0%BE%D1%80%D0%BC%D0%B8%D1%80%D1%83%D0%B5%D0%BC%D1%8B%D1%85+%D0%BA%D0%B0%D1%80%D1%82+%D0%B2+excel.)](https://git.io/typing-svg)
+# [![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&size=25&pause=1000&color=3874CB&width=435&lines=%D0%9F%D1%80%D0%B8%D0%BC%D0%B5%D1%80%D1%8B+%D1%88%D0%B0%D0%B1%D0%BB%D0%BE%D0%BD%D0%BE%D0%B2)](https://git.io/typing-svg)
 
 Карта пассажира
 
