@@ -1,8 +1,7 @@
 # ISCards для Android [Скачать](https://disk.yandex.ru/d/Kv4vuYzTFs5qHg)
 
+# [![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&color=3874CB&width=435&lines=%D0%98%D0%BD%D1%81%D1%82%D1%80%D1%83%D0%BA%D1%86%D0%B8%D1%8F+%D0%BF%D0%BE+ISCards)](https://git.io/typing-svg)
 
-
-# [![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&size=25&pause=1000&color=3874CB&width=435&lines=%D0%98%D0%BD%D1%81%D1%82%D1%80%D1%83%D0%BA%D1%86%D0%B8%D1%8F+%D0%BF%D0%BE+ISCard)](https://git.io/typing-svg)
 Перейдем в "Меню > Настройки"
 
 ![image](https://user-images.githubusercontent.com/38366166/193395848-d8d3fbb9-175b-4e75-ab21-569aa77f95c4.png)
