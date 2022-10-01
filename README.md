@@ -1,5 +1,10 @@
 # ISCards для Android [Скачать](https://disk.yandex.ru/d/Kv4vuYzTFs5qHg)
 
+#[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&size=25&pause=1000&color=3874CB&width=435&lines=%D0%94%D0%B5%D0%BC%D0%BE%D0%BD%D1%81%D1%82%D1%80%D0%B0%D1%86%D0%B8%D1%8F)](https://git.io/typing-svg)
+
+https://user-images.githubusercontent.com/38366166/193409770-927bfcc6-9c94-41d5-8ceb-5f5dfaa14edb.mp4
+
+
 # [![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&size=25&pause=1000&color=3874CB&width=435&lines=%D0%98%D0%BD%D1%81%D1%82%D1%80%D1%83%D0%BA%D1%86%D0%B8%D1%8F+%D0%BF%D0%BE+ISCards)](https://git.io/typing-svg)
 
 Перейдем в "Меню > Настройки"
@@ -23,7 +28,8 @@
 
 Для создания карты нажмите кнопку создать и заполните карту. 
 Кнопка сохранить - сохраняет карту в базу, а кнопка сохранить и отправить - 
-сохраняет в базу и от правляет файл-вложение в почту.
+сохраняет в базу и от правляет файл-вложение в почту. 
+После нажатия сохранить и отправить приложение может потребовать выбрать почтовый клиент для отправки.
 
 # ![image](https://user-images.githubusercontent.com/38366166/193396497-054c1bdd-e8e1-48e6-8d8b-1db29c302ed2.png)
 
