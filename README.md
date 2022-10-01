@@ -34,7 +34,7 @@
 
 ![image](https://user-images.githubusercontent.com/38366166/193396650-f69ee189-778e-4e2c-a671-1768dbdbc4ff.png)
 
-Все действия для карт фиксации анологичны дествиям для карт пассажира.
+Все действия для карт фиксации анологичны действиям для карт пассажира.
 
 # ![image](https://user-images.githubusercontent.com/38366166/193396658-b46ee8f7-e9db-45aa-9726-f5a6e5f90ce2.png)
 # [![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&size=25&pause=1000&color=CB0000&width=435&lines=%D0%9F%D1%80%D0%BE%D0%B1%D0%BB%D0%B5%D0%BC%D0%B0+%D1%81+android+%D0%B8+excel!!!)](https://git.io/typing-svg)
