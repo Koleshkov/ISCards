@@ -1,4 +1,4 @@
-# ISCards для Android [Скачать](https://disk.yandex.ru/d/Kv4vuYzTFs5qHg).
+# ISCards для Android [Скачать](https://disk.yandex.ru/d/Kv4vuYzTFs5qHg)
 
 
 
