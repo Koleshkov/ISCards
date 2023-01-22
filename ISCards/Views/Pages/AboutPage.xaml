@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ISCards.Views.Pages.AboutPage"
+             xmlns:controls="clr-namespace:ISCards.Views.Controls"
+             Title="Обратная связь">
+    
+    <StackLayout VerticalOptions="Center">
+        <Label Text="Контакты для связи"
+               HorizontalTextAlignment="Center"
+               FontSize="20"
+               Margin="10"
+                               />
+        <StackLayout Margin="10" Orientation="Horizontal"
+                                 HorizontalOptions="CenterAndExpand">
+
+            <StackLayout Padding="10">
+                <Image Source="telegram"
+                   HeightRequest="50"
+                        Margin="5">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Command="{Binding TapTelegramCommand}"/>
+                    </Image.GestureRecognizers>
+                </Image>
+                <Label Text="Telegram"
+                   HorizontalTextAlignment="Center"/>
+            </StackLayout>
+            <StackLayout Padding="10">
+                <Image Source="email"
+                   HeightRequest="50"
+               Margin="5">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Command="{Binding TapEmailCommand}"/>
+                    </Image.GestureRecognizers>
+                </Image>
+                <Label Text="Почта"
+                   HorizontalTextAlignment="Center"/>
+            </StackLayout>
+            <StackLayout Padding="10">
+                <Image Source="github"
+                   HeightRequest="50"
+                   Margin="5">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Command="{Binding TapGithubCommand}"/>
+                    </Image.GestureRecognizers>
+                </Image>
+                <Label Text="Github"
+                   HorizontalTextAlignment="Center"/>
+            </StackLayout>
+
+        </StackLayout>
+        <Label Text="© Evgenii Koleshkov, 2022"
+               HorizontalTextAlignment="Center"
+               Margin="10"
+                               />
+    </StackLayout>
+</ContentPage>

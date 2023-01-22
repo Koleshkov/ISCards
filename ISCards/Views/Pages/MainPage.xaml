@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Shell xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:pages="clr-namespace:ISCards.Views.Pages"
+             xmlns:controls="clr-namespace:ISCards.Views.Controls"
+             x:Class="ISCards.Views.Pages.MainPage"
+             Shell.TabBarIsVisible="False">
+    
+    <Shell.FlyoutHeader>
+        <controls:FlyoutHeader/>
+    </Shell.FlyoutHeader>
+    
+    <FlyoutItem FlyoutDisplayOptions="AsMultipleItems">
+        <ShellContent Title="Карты пассажира"
+                      Icon="user"
+                      Route="PassengerCardListPage"
+                      ContentTemplate="{DataTemplate pages:PassengerCardListPage}"/>
+
+        <ShellContent Title="Карты фиксации"
+                      Icon="helmet_safety"
+                      Route="SafetyCardListPage"
+                      ContentTemplate="{DataTemplate pages:SafetyCardListPage}" />
+
+        <ShellContent Title="Настройки"
+                      Icon="gear"
+                      ContentTemplate="{DataTemplate pages:SettingsPage}" />
+
+        <ShellContent Title="Обратная связь"
+                      Icon="circle_nodes"
+                      ContentTemplate="{DataTemplate pages:AboutPage}" />
+
+    </FlyoutItem>
+</Shell>

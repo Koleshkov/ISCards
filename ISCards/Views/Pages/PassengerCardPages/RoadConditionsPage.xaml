@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:controls="clr-namespace:ISCards.Views.Controls"
+             x:Class="ISCards.Views.Pages.PassengerCardPages.RoadConditionsPage"
+             Title="Дорожные условия">
+    <ScrollView Padding="10">
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="auto"/>
+            </Grid.RowDefinitions>
+
+            <StackLayout Grid.Row="0">
+                <controls:CustomCheckBox Title="Ясно"
+                                         IsChecked="{Binding Card.Clear}"/>
+
+                <controls:CustomCheckBox Title="Снег"
+                                         IsChecked="{Binding Card.Snow}"/>
+
+                <controls:CustomCheckBox Title="Облачно"
+                                         IsChecked="{Binding Card.Cloud}"/>
+
+                <controls:CustomCheckBox Title="Дождь/Град"
+                                         IsChecked="{Binding Card.RainHail}"/>
+
+                <controls:CustomCheckBox Title="Солнечно"
+                                         IsChecked="{Binding Card.Sun}"/>
+
+                <controls:CustomCheckBox Title="Темное время суток"
+                                         IsChecked="{Binding Card.Night}"/>
+
+                <controls:CustomCheckBox Title="Дождь"
+                                         IsChecked="{Binding Card.Rain}"/>
+
+                <controls:CustomCheckBox Title="Грязь"
+                                         IsChecked="{Binding Card.Dirt}"/>
+            </StackLayout>
+
+            <StackLayout Grid.Row="1" Margin="0">
+                <Grid >
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Button Grid.Column="0"
+                        Text="Назад" 
+                        Margin="5"
+                        BackgroundColor="{StaticResource Gray400}"
+                        Command="{Binding GoBackCommand}"/>
+                    <Button Grid.Column="1"
+                        Text="Далее"
+                        Margin="5"
+                        Command="{Binding GoNextCommand}"/>
+                </Grid>
+                <Button Text="Сохранить"
+                        Margin="5"
+                        BackgroundColor="{StaticResource Success}"
+                        Command="{Binding SaveCommand}"/>
+            </StackLayout>
+        </Grid>
+    </ScrollView>
+</ContentPage>

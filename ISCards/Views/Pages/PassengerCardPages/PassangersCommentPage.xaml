@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:controls="clr-namespace:ISCards.Views.Controls"
+             x:Class="ISCards.Views.Pages.PassengerCardPages.PassangersCommentPage"
+             Title="Коментарий пассажира">
+    <ScrollView Padding="10">
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="auto"/>
+            </Grid.RowDefinitions>
+
+            <StackLayout Grid.Row="0">
+                <controls:CustomCheckBox Title="Работа остановлена?"
+                                         IsChecked="{Binding Card.WorkStopped}"/>
+
+                <controls:CustomEditor Title="Коментарий:"
+                                       Placeholder="Коментарий пассажира."
+                                       Text="{Binding Card.PassengerComment}"/>
+
+            </StackLayout>
+            <StackLayout Grid.Row="1" Margin="0">
+                <Grid >
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Button Grid.Column="0"
+                            Text="Назад" 
+                            Margin="5"
+                            BackgroundColor="{StaticResource Gray400}"
+                            Command="{Binding GoBackCommand}"/>
+                    <Button Grid.Column="1"
+                            Text="Далее"
+                            Margin="5"
+                            Command="{Binding GoNextCommand}"/>
+                </Grid>
+                <Button Text="Сохранить"
+                        Margin="5"
+                        BackgroundColor="{StaticResource Success}"
+                        Command="{Binding SaveCommand}"/>
+            </StackLayout>
+        </Grid>
+    </ScrollView>
+</ContentPage>

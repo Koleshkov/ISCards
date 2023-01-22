@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentView xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ISCards.Views.Controls.CustomEditor"
+             x:Name="this">
+    <StackLayout Orientation="Vertical">
+        <Label x:Name="Label"
+               Margin="10"
+               BindingContext="{x:Reference this}"/>
+        <Border StrokeThickness="1"
+                Stroke="{StaticResource Gray500}"
+                BackgroundColor="Transparent"
+                StrokeShape="RoundRectangle 5"
+                Padding="5,0,5,0">
+            <Editor  x:Name="Editor"
+                    AutoSize="TextChanges"
+                    IsSpellCheckEnabled="True"
+                    Keyboard="Chat"
+                    HeightRequest="100"
+                    HorizontalOptions="FillAndExpand"
+                    BindingContext="{x:Reference this}"
+                    Text="{Binding Text}"
+                    Placeholder="{Binding Placeholder}"/>
+        </Border>
+    </StackLayout>
+</ContentView>

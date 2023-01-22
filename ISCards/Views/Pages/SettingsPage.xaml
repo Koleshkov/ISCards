@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:controls="clr-namespace:ISCards.Views.Controls"
+             x:Class="ISCards.Views.Pages.SettingsPage"
+             Title="Настройки">
+    
+    <ScrollView Padding="10">
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="auto"/>
+            </Grid.RowDefinitions>
+            <StackLayout>
+                <controls:CustomHeader Title="Данные пользователя"/>
+                <controls:CustomLine/>
+                <controls:CustomEntry Title="Фамилия:"
+                                      Placeholder="Иванов"
+                                      Text="{Binding User.LastName}"/>
+                
+                <controls:CustomEntry Title="Имя:"
+                                      Placeholder="Иван"
+                                      Text="{Binding User.FirstName}"/>
+
+                <controls:CustomEntry Title="Отчество:"
+                                      Placeholder="Иванович"
+                                      Text="{Binding User.MiddleName}"/>
+
+                <controls:CustomEntry Title="Организация:"
+                                      Placeholder="ООО ИС"
+                                      Text="{Binding User.Organization}"/>
+
+                <controls:CustomEntry Title="Подразделение:"
+                                      Placeholder="ПУ/ПП"
+                                  Text="{Binding User.Department}"/>
+
+                <controls:CustomEntry Title="Должность:"
+                                      Placeholder="Инженер технолог"
+                                      Text="{Binding User.Position}"/>
+
+                <controls:CustomEntry Title="Телефон:"
+                                      Placeholder="+79999999999"
+                                  Text="{Binding User.Phone}"/>
+
+                <controls:CustomEntry Title="Email:"
+                                      Placeholder="i.ivanov@isnnb.ru"
+                                  Text="{Binding User.Email}"/>
+            </StackLayout>
+            <StackLayout Grid.Row="1">
+                <Label Text="{Binding Message}"
+                   Margin="0,10"/>
+                <Button Text="Сохранить"
+                    Margin="0,10"
+                    BackgroundColor="{StaticResource Success}"
+                    IsVisible="{Binding IsEditMode}"    
+                    Command="{Binding SaveCommand}"/>
+            </StackLayout>
+
+        </Grid>
+    </ScrollView>
+</ContentPage>

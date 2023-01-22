@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:controls="clr-namespace:ISCards.Views.Controls"
+             x:Class="ISCards.Views.Pages.PassengerCardPages.ReviewAutoPage"
+             Title="Осмотр ТС">
+    <ScrollView Padding="10">
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="auto"/>
+            </Grid.RowDefinitions>
+
+            <StackLayout Grid.Row="0">
+                <controls:CustomCheckBox Title="Наличие в ТС аварийного комплекта:"
+                                         IsChecked="{Binding Card.EmergencyKit}"/>
+
+                <controls:CustomCheckBox Title="Наличие БСМТС:"
+                                         IsChecked="{Binding Card.MonitoringSystem}"/>
+
+                <controls:CustomCheckBox Title="Отсутсвие посторонних предметов в зоне обзора:"
+                                         IsChecked="{Binding Card.ForeignObjects}"/>
+
+                <controls:CustomCheckBox Title="Наличие плана поездки:"
+                                         IsChecked="{Binding Card.RoutePassport}"/>
+
+                <controls:CustomCheckBox Title="Наличие Паспорта автобусного маршрута:"
+                                         IsChecked="{Binding Card.BusPassport}"/>
+
+                <controls:CustomCheckBox Title="Водитель и пассажир престегнуты ремнями:"
+                                         IsChecked="{Binding Card.SeatBeltsFastened}"/>
+
+                <controls:CustomCheckBox Title="Груз зафиксирован:"
+                                         IsChecked="{Binding Card.CargoFixed}"/>
+            </StackLayout>
+            <StackLayout Grid.Row="1" Margin="0">
+                <Grid >
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Button Grid.Column="0"
+                        Text="Назад" 
+                        Margin="5"
+                        BackgroundColor="{StaticResource Gray400}"
+                        Command="{Binding GoBackCommand}"/>
+                    <Button Grid.Column="1"
+                        Text="Далее"
+                        Margin="5"
+                        Command="{Binding GoNextCommand}"/>
+                </Grid>
+                <Button Text="Сохранить"
+                        Margin="5"
+                        BackgroundColor="{StaticResource Success}"
+                        Command="{Binding SaveCommand}"/>
+            </StackLayout>
+        </Grid>
+    </ScrollView>
+</ContentPage>

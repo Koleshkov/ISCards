@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentView xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ISCards.Views.Controls.CustomPicker"
+             x:Name="this">
+    <StackLayout>
+        <Label x:Name="Label"
+               Margin="10"
+               BindingContext="{x:Reference this}"/>
+        <Border StrokeThickness="1"
+                Stroke="{StaticResource Gray500}"
+                BackgroundColor="Transparent"
+                StrokeShape="RoundRectangle 5"
+                Padding="5,0,5,0">
+            <Picker x:Name="Picker"
+                    BindingContext="{x:Reference this}"
+                    ItemsSource="{Binding ItemSource}"
+                    SelectedItem="{Binding SelectedItem}"
+                    SelectedIndex="{Binding SelectedIndex}"/>
+        </Border>
+    </StackLayout>
+</ContentView>
